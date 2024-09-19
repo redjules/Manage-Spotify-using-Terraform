@@ -1,6 +1,6 @@
 # Manage Spotify using Terraform
 
-# Prerequisites
+# Prerequisites
 
 To complete this tutorial, you will need:
 
@@ -99,9 +99,6 @@ mv terraform.tfvars.example terraform.tfvars
 
 The .gitignore file in this repository excludes files with the .tfvars extension from version control to prevent you from accidentally committing your credentials.
 
-Warning
-
-Never commit sensitive values to version control.
 
 Find the terminal window where the Spotify authorization proxy server is running and copy the APIKey from its output.
 
@@ -110,13 +107,13 @@ Open terraform.tfvars, and replace ... with the key from the proxy, so that Terr
 ![Screenshot 2024-09-19 at 18 33 53](https://github.com/user-attachments/assets/7ee7d313-d9c7-44bf-aaa1-c6b4da3cf7f2)
 
 
-# Install the Spotify provider
+# Install the Spotify provider
 
 ```
 terraform init
 ```
 
-# Create the playlist
+# Create the playlist
 
 ```
 terraform apply
